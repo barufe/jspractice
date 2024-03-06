@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GS Desarrollador iOS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/porfolio_1/css/styles.css" />
-    <meta charset="UTF-8" />
-    <script src="/js/codigo.js"></script>
+    <title>Germain Seijas Desarrollador iOS Senior</title>
   </head>
+
   <body>
-    <!-- SECCION INICIO -->
+    <!-- SECCION I N I C I O -->
     <section id="inicio">
       <div class="contenido">
         <header>
@@ -24,159 +27,477 @@
             <h1>/GS/</h1>
             <nav id="nav" class="">
               <ul id="links">
-                <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                <li><a href="#sobremi">SOBRE MI</a></li>
-                <li><a href="#servicios">SERVICIOS</a></li>
-                <li><a href="#porfolio">PORFOLIO</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
               </ul>
             </nav>
-            <!-- Iconos del menu responsive -->
-            <div id="icon-nav">
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
               <i class="fa-solid fa-bars"></i>
             </div>
-            <!-- Iconos de las redes sociales -->
+
             <div class="redes">
-              =
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/germain-seijas-10837911a/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>  -->
+              <!-- <a href="#"><i class="fa-brands fa-instagram-square"></i></a> -->
             </div>
           </div>
         </header>
         <div class="presentacion">
           <p class="bienvenida">Bienvenidos</p>
-          <h2>Soy <span>Germain Seijas</span>, Desarrollador iOS</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            officiis suscipit pariatur veritatis temporibus, sed similique error
-            doloribus dignissimos minima, adipisci architecto tempora qui
-            consequatur. Odio architecto sit delectus quos?
+          <h2>Soy <span>Germain Seijas</span>, Desarrollador movil en iOS</h2>
+          <p class="descripcion">
+            Con casi 10 años de experiencia en el desarrollo de aplicaciones
+            móviles bajo el framework UIKit, me especializo en impulsar
+            proyectos hacia el éxito mediante el uso de las mejores prácticas y
+            la implementación de soluciones innovadoras.
           </p>
-          <a href="#porfolio">Ir a Porfolio</a>
+          <a href="#portfolio">Ir a Portafolio</a>
         </div>
       </div>
     </section>
 
-    <!-- SECCION SOBRE MI -->
+    <!-- SECCION S O B R E M I -->
     <section id="sobremi">
       <div class="contenedor-foto">
-        <img src="/images/profile.jpg" alt="" />
+        <img src="/images/foto.png" alt="" />
       </div>
       <div class="sobremi">
         <p class="titulo-seccion">Sobre Mi</p>
-        <h2>Hola, soy <span>Germain Seijas</span></h2>
-        <h3>Desarrollador iOS</h3>
+        <h2>Hola, Soy <span>Germain Seijas</span></h2>
+        <h3>Desarrollador iOS Senior</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-          vero laudantium impedit repudiandae.
+          Con casi 10 años de experiencia en el desarrollo de aplicaciones
+          móviles bajo el framework UIKit, me especializo en impulsar proyectos
+          hacia el éxito mediante el uso de las mejores prácticas y la
+          implementación de soluciones innovadoras.
         </p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p>🔍 Habilidades Destacadas:</p>
+        <p>
+          Desarrollo Modular y TDD: Aplico rigurosamente las mejores prácticas
+          de desarrollo modular y TDD (Desarrollo Guiado por Pruebas),
+          garantizando la escalabilidad y el rendimiento óptimo del proyecto.
+        </p>
+        <p>
+          Análisis y Diseño Eficiente: Analizo los requisitos del proyecto y
+          diseño algoritmos para abordar problemas complejos, identificando los
+          patrones de diseño más adecuados para cada solución.
+        </p>
+        <p>
+          Fomento de Colaboración: Promuevo el trabajo colaborativo y desafío
+          los procesos establecidos para mejorar continuamente el rendimiento y
+          la productividad del equipo.
+        </p>
+        <p>
+          Seguridad y DevOps: Poseo conocimientos sólidos en controles de
+          seguridad y reducción de riesgos, así como experiencia en colaborar
+          con equipos DevOps para automatizar procesos de desarrollo.
+        </p>
+        <p>
+          Actualización Tecnológica: Me mantengo al día con las últimas
+          tendencias tecnológicas y actualizaciones relevantes en el campo del
+          desarrollo de aplicaciones móviles.
+        </p>
+        <p>
+          Metodologías Ágiles: Cuento con experiencia en la implementación de
+          metodologías ágiles, facilitando la entrega rápida y eficiente de
+          soluciones de software.
+        </p>
+        <p>
+          Gestión de Proyectos End-to-End: Participación integral en el ciclo de
+          vida de desarrollo de aplicativos móviles, desde la concepción de la
+          idea hasta la publicación en la tienda de aplicaciones, integrando
+          diversas tecnologías y especialidades.
+        </p>
+        <p>
+          Liderazgo y Mentoría: He liderado equipos en múltiples ocasiones,
+          brindando mentoría y apoyo para el crecimiento profesional de mis
+          compañeros, así como impulsando el éxito del proyecto mediante la
+          comunicación efectiva de ideas y la resolución de problemas complejos
+          de manera clara y concisa.
+        </p>
+        <p>
+          🤝 Conéctate conmigo: Si buscas un profesional apasionado y orientado
+          al éxito para tu equipo de desarrollo, ¡no dudes en contactarme!
+        </p>
+
         <a href="#">Descargar CV</a>
       </div>
     </section>
 
-    <!-- SECCION SERVICIOS -->
+    <!-- SECCION S E R V I C I O S -->
     <section id="servicios">
       <h3 class="titulo-seccion">MIS SERVICIOS</h3>
-      <div class="filas">
+      <div class="fila">
         <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>Desarrollo de app movil</h4>
+          <span class="icono"> <i class="fa-solid fa-code"></i></span>
+          <h4>Desarrollo de Aplicaciones iOS</h4>
           <hr />
           <ul class="servicios-tag">
-            <li>iOS</li>
-            <li>Desarrollo movil</li>
-            <li>Otros</li>
+            <li>iOS Apps</li>
+            <li>Desarrollo iOS</li>
+            <li>Swift</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ipsam
-            dignissimos quis nemo atque excepturi, reprehenderit suscipit
-            deleniti porro ullam assumenda ipsum eius non illum!
+            - Creación de aplicaciones móviles para dispositivos iOS, adaptadas
+            a las necesidades y especificaciones del cliente.
+          </p>
+          <p>
+            - Utilización de las últimas tecnologías y mejores prácticas de
+            desarrollo para garantizar aplicaciones robustas, eficientes y de
+            alta calidad.
+          </p>
+          <p>
+            - Desarrollo de interfaces de usuario atractivas y funcionales
+            siguiendo los estándares de diseño de Apple.
           </p>
         </div>
         <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>Desarrollo de app movil</h4>
+          <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+          <h4>Optimización de Aplicaciones iOS</h4>
           <hr />
           <ul class="servicios-tag">
-            <li>iOS</li>
-            <li>Desarrollo movil</li>
-            <li>Otros</li>
+            <li>Optimización iOS</li>
+            <li>Mejora rendimiento</li>
+            <li>Estabilidad iOS</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ipsam
-            dignissimos quis nemo atque excepturi, reprehenderit suscipit
-            deleniti porro ullam assumenda ipsum eius non illum!
+            - Análisis y optimización del rendimiento de aplicaciones iOS
+            existentes para mejorar la velocidad, estabilidad y eficiencia.
+          </p>
+          <p>
+            - Implementación de mejoras de código y optimización de recursos
+            para una experiencia de usuario más fluida y satisfactoria.
           </p>
         </div>
         <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>Desarrollo de app movil</h4>
+          <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+          <h4>Integración de Funcionalidades Avanzadas</h4>
           <hr />
           <ul class="servicios-tag">
-            <li>iOS</li>
-            <li>Desarrollo movil</li>
-            <li>Otros</li>
+            <li>Estabilidad</li>
+            <li>Características Avanzadas</li>
+            <li>Integración</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ipsam
-            dignissimos quis nemo atque excepturi, reprehenderit suscipit
-            deleniti porro ullam assumenda ipsum eius non illum!
+            - Integración de funcionalidades avanzadas en aplicaciones iOS, como
+            pagos móviles, geolocalización, notificaciones push, entre otras.
+          </p>
+          <p>
+            - Desarrollo de características personalizadas y únicas para
+            diferenciar la aplicación en el mercado y satisfacer las necesidades
+            específicas del cliente.
           </p>
         </div>
-
       </div>
-      <div class="filas">
+      <div class="fila">
         <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>Desarrollo de app movil</h4>
+          <span class="icono"><i class="fa-solid fa-database"></i></span>
+          <h4>Mantenimiento y Actualización de Aplicaciones iOS</h4>
           <hr />
           <ul class="servicios-tag">
-            <li>iOS</li>
-            <li>Desarrollo movil</li>
-            <li>Otros</li>
+            <li>Mantenimiento</li>
+            <li>Corrección Errores</li>
+            <li>Actualización iOS</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ipsam
-            dignissimos quis nemo atque excepturi, reprehenderit suscipit
-            deleniti porro ullam assumenda ipsum eius non illum!
+            - Servicios de mantenimiento continuo y actualización de
+            aplicaciones iOS para garantizar su compatibilidad con las últimas
+            versiones de iOS y dispositivos Apple.
+          </p>
+          <p>
+            - Corrección de errores, solución de problemas de compatibilidad y
+            actualización de características para mejorar la experiencia del
+            usuario y mantener la relevancia de la aplicación en el mercado.
           </p>
         </div>
         <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>Desarrollo de app movil</h4>
+          <span class="icono"><i class="fa-solid fa-palette"></i></span>
+          <h4>Asesoramiento y Consultoría en Desarrollo iOS</h4>
           <hr />
           <ul class="servicios-tag">
-            <li>iOS</li>
-            <li>Desarrollo movil</li>
-            <li>Otros</li>
+            <li>Consultoría</li>
+            <li>Planificación Proyectos</li>
+            <li>Asesoramiento</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ipsam
-            dignissimos quis nemo atque excepturi, reprehenderit suscipit
-            deleniti porro ullam assumenda ipsum eius non illum!
+            - Consultoría experta en desarrollo de aplicaciones iOS, ofreciendo
+            orientación y asesoramiento en la planificación, diseño y desarrollo
+            de proyectos.
+          </p>
+          <p>
+            - Análisis de requisitos, evaluación de tecnologías y
+            recomendaciones de mejores prácticas para garantizar el éxito del
+            proyecto y la satisfacción del cliente.
           </p>
         </div>
         <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>Desarrollo de app movil</h4>
+          <span class="icono"
+            ><i class="fa-solid fa-person-circle-question"></i
+          ></span>
+          <h4>Integración de Servicios Web y API</h4>
           <hr />
           <ul class="servicios-tag">
-            <li>iOS</li>
-            <li>Desarrollo movil</li>
-            <li>Otros</li>
+            <li>Planificación Proyectos</li>
+            <li>Conexiones Seguras</li>
+            <li>API iOS</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ipsam
-            dignissimos quis nemo atque excepturi, reprehenderit suscipit
-            deleniti porro ullam assumenda ipsum eius non illum!
+            - Integración de servicios web y API en aplicaciones iOS para
+            acceder a datos externos, funcionalidades adicionales y servicios de
+            terceros.
+          </p>
+          <p>
+            - Desarrollo de conexiones seguras y eficientes para garantizar la
+            interoperabilidad y la integración sin problemas de la aplicación
+            con otros sistemas y plataformas.
           </p>
         </div>
-        
+        <!--<div class="servicio">
+          <span class="icono"
+            ><i class="fa-solid fa-person-circle-question"></i
+          ></span>
+          <h4>Pruebas y Control de Calidad</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Pruebas iOS</li>
+            <li>Funcionamiento Correcto</li>
+            <li>Control Calidad</li>
+          </ul>
+          <p>
+            - Realización de pruebas exhaustivas y control de calidad en aplicaciones iOS para garantizar su funcionamiento correcto, su rendimiento óptimo y su cumplimiento con los estándares de calidad.
+          </p>
+        </div>-->
       </div>
     </section>
 
-    <!-- SECCION SERVICIOS -->
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Swift</p>
+          <span class="porcentaje">95%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="html"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Objective-C</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="js"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>UIKit</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="bd"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span> Integración de API y Servicios Web</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ps"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Core Data</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ex5"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Pruebas y Control de Calidad en iOS</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ex6"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>UIKit</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div class="" id="ex7"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Proyectos donde participe</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a
+            href="https://apps.apple.com/pe/app/banca-m%C3%B3vil-bcp/id777961079"
+          >
+            <img src="/images/proyecto1.png" alt="" />
+            <div class="info">
+              <h4>Banca Móvil BCP</h4>
+              <p>
+                Realiza tus operaciones de una manera más sencilla y cómoda
+                desde tu dispositivo móvil, con la seguridad que solo el BCP te
+                puede brindar.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="https://apps.apple.com/pe/app/cineplanet-per%C3%BA/id523901">
+            <img src="/images/proyecto2.png" alt="" />
+            <div class="info">
+              <h4>Cineplanet Perú</h4>
+              <p>
+                Explora la cartelera, horarios y mira los tráilers de los
+                últimos estrenos.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="https://apps.apple.com/pe/app/lagom/id1446488696">
+            <img src="/images/proyecto3.png" alt="" />
+            <div class="info">
+              <h4>Lagom</h4>
+              <p>Conecta a las familias con la nutrición escolar.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="https://apps.apple.com/do/app/sunarp/id1045750816">
+            <img src="/images/proyecto4.png" alt="" />
+            <div class="info">
+              <h4>Sunarp</h4>
+              <p>App para realizar tus trámites registrales.</p>
+            </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a
+            href="https://apps.apple.com/es/app/ptx-therapy-24-7-pain-relief/id1478813109"
+          >
+            <img src="/images/proyecto5.png" alt="" />
+            <div class="info">
+              <h4>PTX Therapy - 24/7 Pain Relief</h4>
+              <p>
+                Rutinas de fisioterapia completamente personalizadas y
+                respaldadas por la ciencia en la comodidad de su hogar.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="">
+            <img src="/images/proyecto6.png" alt="" />
+            <div class="info">
+              <h4>Flyers Concierge</h4>
+              <p>
+                Es una aplicación gratuita que será tu asistente personal
+                durante toda tu experiencia de viaje
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactanos ahora</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo *"
+              class="input-mitad"
+            />
+            <input
+              type="email"
+              placeholder="Dirección de Email"
+              class="input-mitad"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full" />
+          </div>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>Todos los derechos reservados - 2024</p>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/germain-seijas-10837911a/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="/porfolio_1/js/script.js"></script>
   </body>
 </html>
