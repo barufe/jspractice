@@ -142,7 +142,7 @@
           al éxito para tu equipo de desarrollo, ¡no dudes en contactarme!
         </p>
 
-        <a href="#">Descargar CV</a>
+        <button id="downloadButton">Descargar CV</button>
       </div>
     </section>
 
@@ -374,6 +374,7 @@
           <div class="overlay"></div>
           <a
             href="https://apps.apple.com/pe/app/banca-m%C3%B3vil-bcp/id777961079"
+            target="_blank"
           >
             <img src="/images/proyecto1.png" alt="" />
             <div class="info">
@@ -388,7 +389,10 @@
         </div>
         <div class="proyecto">
           <div class="overlay"></div>
-          <a href="https://apps.apple.com/pe/app/cineplanet-per%C3%BA/id523901">
+          <a
+            href="https://apps.apple.com/pe/app/cineplanet-per%C3%BA/id523901"
+            target="_blank"
+          >
             <img src="/images/proyecto2.png" alt="" />
             <div class="info">
               <h4>Cineplanet Perú</h4>
@@ -401,7 +405,10 @@
         </div>
         <div class="proyecto">
           <div class="overlay"></div>
-          <a href="https://apps.apple.com/pe/app/lagom/id1446488696">
+          <a
+            href="https://apps.apple.com/pe/app/lagom/id1446488696"
+            target="_blank"
+          >
             <img src="/images/proyecto3.png" alt="" />
             <div class="info">
               <h4>Lagom</h4>
@@ -413,7 +420,10 @@
       <div class="fila">
         <div class="proyecto">
           <div class="overlay"></div>
-          <a href="https://apps.apple.com/do/app/sunarp/id1045750816">
+          <a
+            href="https://apps.apple.com/do/app/sunarp/id1045750816"
+            target="_blank"
+          >
             <img src="/images/proyecto4.png" alt="" />
             <div class="info">
               <h4>Sunarp</h4>
@@ -425,6 +435,7 @@
           <div class="overlay"></div>
           <a
             href="https://apps.apple.com/es/app/ptx-therapy-24-7-pain-relief/id1478813109"
+            target="_blank"
           >
             <img src="/images/proyecto5.png" alt="" />
             <div class="info">
@@ -438,7 +449,7 @@
         </div>
         <div class="proyecto">
           <div class="overlay"></div>
-          <a href="">
+          <a href="" target="_blank">
             <img src="/images/proyecto6.png" alt="" />
             <div class="info">
               <h4>Flyers Concierge</h4>
@@ -453,42 +464,92 @@
     </section>
 
     <!-- SECCTION C O N T A C T O -->
+
     <section id="contacto">
       <h3 class="titulo-seccion">Contactanos ahora</h3>
       <div class="contenedor-form">
-        <form action="">
+        <form id="form">
           <div class="fila mitad">
             <input
               type="text"
-              placeholder="Nombre Completo *"
+              placeholder="Nombre"
               class="input-mitad"
+              id="name"
+              name="name"
+              required
             />
             <input
               type="email"
               placeholder="Dirección de Email"
               class="input-mitad"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="fila">
+            <input
+              type="text"
+              placeholder="Asunto..."
+              class="input-full"
+              id="tema"
+              name="tema"
+              required
             />
           </div>
           <div class="fila">
-            <input type="text" placeholder="Tema..." class="input-full" />
-          </div>
-          <div class="fila">
             <textarea
-              name=""
-              id=""
+              name="message"
+              id="message"
               cols="30"
               rows="10"
               placeholder="Tu Mensaje..."
               class="input-full"
+              required
             ></textarea>
           </div>
-
-          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+          <input
+            type="submit"
+            id="button"
+            value="Enviar email"
+            class="btn-enviar"
+          />
         </form>
       </div>
     </section>
 
+    <div
+      id="overlay"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      "
+    >
+      <div
+        id="popup"
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          padding: 20px;
+          border-radius: 5px;
+        "
+      >
+        <p>¡Formulario enviado correctamente!</p>
+        <button id="acceptButton">Aceptar</button>
+      </div>
+    </div>
     <!-- SECCION FOOTER -->
+
     <footer>
       <p>Todos los derechos reservados - 2024</p>
       <div class="redes">
@@ -497,7 +558,15 @@
         ></a>
       </div>
     </footer>
-
-    <script src="/porfolio_1/js/script.js"></script>
   </body>
+
+  <script src="/porfolio_1/js/script.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+
+  <script type="text/javascript">
+    emailjs.init("e19lmeUPSJhX_68fQ");
+  </script>
 </html>

@@ -44,3 +44,47 @@ function efectoHabilidades() {
     document.getElementById("ex7").classList.add("barra-progreso7");
   }
 }
+
+const btn = document.getElementById("button");
+const message = document.getElementById("message");
+const nameForm = document.getElementById("name");
+const tema = document.getElementById("tema");
+const email = document.getElementById("email");
+const popup = document.getElementById("overlay");
+
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  btn.value = "Enviando...";
+
+  const serviceID = "default_service";
+  const templateID = "template_ju4uarc";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = "Enviar email";
+      popup.style.display = "block";
+    },
+    (err) => {
+      btn.value = "Enviar email";
+      popup.value = JSON.stringify(err);
+      popup.style.display = "block";
+    }
+  );
+  message.value = "";
+  nameForm.value = "";
+  tema.value = "";
+  email.value = "";
+});
+
+document.getElementById("acceptButton").addEventListener("click", function () {
+  document.getElementById("overlay").style.display = "none";
+});
+
+document
+  .getElementById("downloadButton")
+  .addEventListener("click", function () {
+    // Cambia la URL a la ubicación de tu archivo CV
+    var url = "/images/cvgermain.pdf";
+    window.open(url, "_blank");
+  });
